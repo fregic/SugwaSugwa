@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 with LEAP :: Fregic</title>
+	<link href='http://api.mobilis.co.kr/webfonts/v2/css/NanumGothicWeb' rel='stylesheet' type='text/css' />
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<table id="top_bar" style="margin-top:20px;" width="auto" height="32" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td colspan="7"><a href="http://www.fregic.com">
+      	  <img src="images/index.gif" width="auto" height="auto" alt=""></a></td>
+          <td colspan="7"><a href="javascript:window.history.back();">
+      	  <img src="images/back.gif" width="auto" height="auto" alt="" style="margin-top:30px;"></a></td>
+  
+    	<td>
+     	 <img src="images/&#xc2a4;&#xd398;&#xc774;&#xc11c;.gif" width="1" height="32" alt=""></td>
+ 	 </tr>
+  </table>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1><h5>with LEAP</h5>
+      <h4 class="subtitle" align="center">숫자를 이어 2048을 맞추세요!</h4>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    
+     <div class="above-game">
+        <p class="restart-button">RESTART(Hold out two hands)</p>
+    </div>
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Any Gestures to keep going</a>
+          <a class="retry-button">Any Gestures to restart</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your<strong> gestures </strong>to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    <strong class="important">Note:</strong> This site is the LEAP Motion version of 2048.</p>
+    <p>You can play it on your mobile devices. </p>
+    <hr>
+    <p>Created By 
+    <a href="http://www.fregic.com"><img src="fregic_logo_transparent_white.png" width="104" height="39" alt=""/></a>. Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio.</a></p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+    <script src="js/leap.min.js"></script>
+</body>
+</html>
